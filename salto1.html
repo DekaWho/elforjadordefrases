@@ -36,7 +36,7 @@
       line-height: 0.85;
       color: #00e5ff;
 
-      margin-top: 2vw;
+      margin-top: clamp(2rem, 2vw, 6rem);
       margin-bottom: clamp(2rem, 2vw, 6rem);
     }
 
@@ -64,14 +64,6 @@
       background-color: #A2FAA3;
     }
 
-    .firma{
-      font-family: "Sedgwick Ave Display", cursive;
-      color: #FF4FDD;
-      font-size: clamp(5rem, 5vw, 6rem);
-      padding-left: 1.5rem; /* Para igualarse con el ul */
-      margin-top: 0;
-    }
-
     @media (max-width: 600px) {
       body {
         max-width: 90vw;
@@ -87,7 +79,7 @@
   
   <p style="color: rgb(238, 238, 238)">Has saltado 24h hacia el futuro (tranqui, lo has hecho sin envejecer)</p>
 
-  <p><strong>Esto te permite leer ahora el mail que te iba a llegar mañana. YA MISMO, OFERTA EXCLUSIVA!</strong></p>
+  <p><strong>Esto te permite leer ahora el mail que te iba a llegar mañana. <span style="color: #00e5ff">YA MISMO,</span> <span style="color: #FF4FDD">OFERTA EXCLUSIVA!</span></strong></p>
 
     
 </body>
