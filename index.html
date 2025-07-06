@@ -15,11 +15,11 @@
 
     html {
       scroll-behavior: smooth;
+      font-size: 18px;
     }
 
     body {
       font-family: "IBM Plex Sans", sans-serif;
-      font-size: 19px;
       background-color:rgb(251, 252, 255);
       color: #252422;
       margin: 0;
@@ -53,6 +53,10 @@
 
     .hero-text {
       flex: 2; /* parte más grande */
+      
+      /* Evitar que se desborde */
+      box-sizing: border-box;
+      overflow-x: hidden;
     }
 
     .hero-image img {
@@ -97,7 +101,7 @@
 
     h1 {
       font-family: "Staatliches", sans-serif;
-      font-size: clamp(6em, 6vw, 9em);
+      font-size: clamp(6em, 6vw, 12em);
       margin-top: 2vw;
       line-height: 0.85;
       color: #FF4FDD;
@@ -124,13 +128,13 @@
 
     .pcallout {
       font-size: clamp(1.3rem, 1.3vw, 1.5rem);
-      margin-bottom: clamp(2rem, 3vw, 5rem);
+      margin-bottom: clamp(3rem, 4.5vw, 7rem);
     }
 
     .firma {
       font-family: "Sedgwick Ave Display", cursive;
       color: #00e5ff;
-      font-size: clamp(5rem, 5vw, 6rem);
+      font-size: clamp(5rem, 6vw, 10rem);
       padding-left: 1.5rem; /* Para igualarse con el ul */
       margin-top: 2rem;
       margin-bottom: 0;
@@ -335,10 +339,8 @@
       
     </div>
 
-    <p  style="color: black; margin-top: 4rem; margin-bottom: 1rem; font-weight: 400; 
-      font-size: clamp(1rem, 3vw, 1.5rem); text-align: center;">Para poder desuscribirte primero has de suscribirte</p>
-    <p style="color: black; margin-top: 0; margin-bottom: 2rem; font-weight: 400; font-size: clamp(6rem, 7vw, 7rem); text-align: center; 
-      font-family: 'Staatliches', sans-serif; line-height: 1;">Solo si aceptas el reto:</p>
+    <h3 style="color: black; font-size: clamp(1.4rem, 1.5vw, 1.8rem);">Para poder desuscribirte primero has de suscribirte</h3>
+    <h1 style="color: black; line-height: 0.8; font-size: clamp(6em, 6vw, 10em);">Solo si aceptas el reto:</h1>
 
     <!--  Mail form -->
       <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1750852");</style>
