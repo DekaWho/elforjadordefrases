@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asedio Relámpago</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Sedgwick+Ave+Display&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon48.png">
+
+  <style>
+    html {
+      font-size: 18px;
+    }
+
+    body {
+      font-family: "IBM Plex Sans", sans-serif;
+      background-color: #fffbf5;
+      color: #252422;
+      margin: 0;
+      padding: 0;
+    }
+
+    .banner {
+      width: 60vw;
+      /*Centrar el contenido */
+      margin: 1rem auto;
+      padding: 0 1rem;
+      padding-bottom: 0;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    .cuerpo {
+      max-width: 36vw;
+      /*Centrar el contenido */
+      margin: 1rem auto;
+      padding: 0 1rem;
+      padding-bottom: 0;
+      margin-top: 5vw;
+    }
+
+    img {
+      max-width: clamp(25rem, 28vw, 35rem);
+      margin-bottom: 3em;
+      /*Centrar el contenido */
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1,
+    h2,
+    h3 {
+      text-align: center;
+    }
+
+
+    h1 {
+      font-family: 'Staatliches', sans-serif;
+      font-size: clamp(3em, 4.5vw, 10em);
+      line-height: 1;
+      font-weight: bold;
+      color: #252422;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: clamp(2rem, 2vw, 4rem);
+      color: #FF4FDD;
+
+      line-height: 1;
+      padding-left: 10%;
+      padding-right: 10%;
+
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+
+    p {
+      margin: 1em 0;
+      margin-bottom: clamp(5rem, 7vw, 10rem);
+      font-size: clamp(1.3rem, 1.4vw, 1.8rem);
+      line-height: 1.7;
+    }
+
+    .firma {
+      font-family: "Sedgwick Ave Display", cursive;
+      color: #00e5ff;
+      font-size: clamp(5rem, 6vw, 10rem);
+      margin-top: 2rem;
+      margin-bottom: 0;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    del {
+      text-decoration: line-through;
+    }
+
+    ul {
+      padding-left: 2em;
+      padding-right: 1em;
+      margin-top: 0;
+      margin-bottom: clamp(5rem, 7vw, 10rem);
+    }
+
+    li {
+      margin-bottom: 0.5em;
+      padding-bottom: clamp(1rem, 1vw, 2rem);
+      font-size: clamp(1.2rem, 1.4vw, 1.6rem);
+      line-height: 1.5;
+    }
+
+    ul.check-list {
+      /* Quita el símbolo por defecto */
+      list-style: none;
+      padding-left: 2rem;
+      margin-bottom: 0;
+    }
+
+    ul.check-list ul {
+      list-style: none;
+    }
+
+    ul.check-list li {
+      line-height: 2;
+    }
+
+    ul.check-list li::before {
+      content: "☑";
+    }
+
+    .subr {
+      background-color: #00e5ff;
+    }
+
+    u {
+      text-decoration: underline;
+      text-underline-offset: 7px;
+      text-decoration-thickness: 3px;
+    }
+    
+    a {
+      color: #00e5ff;
+    }
+
+    ::selection {
+      background-color: #A2FAA3;
+    }
+
+    @media (max-width: 1000px) {
+      .banner {
+        width: 98vw;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      .cuerpo {
+        max-width: 98vw;
+        margin: 1rem auto;
+        margin-top: 5rem;
+        padding: 0 1rem;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+        line-height: 1;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        text-align: left;
+        padding: 0;
+
+      }
+
+      .leftMobile {
+        text-align: left;
+      }
+
+      .biggerMobile {
+        font-size: 6rem;
+      }
+
+      img {
+        max-width: 95vw;
+      }
+
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="banner">
+    <h1 class="leftMobile" style="font-family: 'IBM Plex Sans', sans-serif;">
+      ¿SABÍAS QUE PUEDES ESTAR “BORRACHO” DE TRABAJO <span style="color: #3e3d3a">(INCLUSO SI LO TIENES TODO BAJO CONTROL)</span> SABOTEANDO EN SILENCIO EL CRECIMIENTO DE TU ECOMMERCE?
+    </h1>
+
+    <h2 class="leftMobile">Esto es lo que le pasó a Max&nbsp;Verstappen con Red&nbsp;Bull antes de convertirse en una leyenda:
+    </h2>
+
+    <img src="max.webp" alt="Foto de Max Verstappen">
+
+  </div>
+
+
+  <div class="cuerpo">
+    <p style="margin-bottom: 2rem">
+      Si no lo conoces es un piloto de Fórmula 1 histórico:
+    </p>
+
+    <ul>
+      <li>
+        <strong>
+          Piloto más joven en debutar en la F1 (con 17 años)
+        </strong>
+      </li>
+
+      <li>
+        Récord de más victorias en una sola temporada
+      </li>
+
+      <li>
+        <strong>
+          Mayor racha de victorias consecutivas en la F1
+        </strong>
+      </li>
+
+      <li>
+        Mayor número de puntos en una temporada
+      </li>
+
+      <li>
+        <strong>
+          Mayor ventaja de puntos sobre el segundo
+        </strong>
+      </li>
+
+      <li>
+        Y podría seguir…
+      </li>
+
+    </ul>
+
+    <p>
+      Max es el piloto más joven en ganar una carrera (con 18 años en 2016)
+    </p>
+
+    <p>
+      Y aunque siempre tuvo aura de leyenda, no fue hasta 5 años más tarde que fue campeón del mundo (en 2021)
+    </p>
+
+    <p style="font-size: clamp(2rem, 3vw, 2.5rem); font-weight: 500; margin-bottom: 1rem;">
+      <span class="subr">
+        ¿Por qué?
+      </span>
+    </p>
+
+    <p>
+      Max era una persona entregada a su propósito (en cuerpo y alma) Iba a ser una leyenda pero sabía que ese logro no
+      cae del cielo.
+    </p>
+
+    <p>
+      <strong>
+        Estaba obsesionado con entrenar y alcanzar sus objetivos.
+      </strong>
+    </p>
+
+    <p style="margin-bottom: 0;">
+      Pero cuando tienes algo tan interiorizado, te centras en tu propósito y asumes que solo queda seguir, y seguir y
+      seguir. Nada te distrae. Nada más importa. Entonces es cuando…
+    </p>
+
+    <h1 class="biggerMobile">
+      <span style="color:#00e5ff">
+        <u>
+          acabas
+        </u>
+      </span>
+
+      <span style="color:#FF4FDD">
+        <u>
+          borracho
+        </u>
+      </span>
+    </h1>
+
+    <p style="text-align: center;">
+      <strong>
+        Es como afilar una espada para aparecer en un duelo de pistola 🤠
+      </strong>
+    </p>
+
+    <p>
+      Es natural “emborracharse” y perder claridad cuando llevas mucho tiempo muy metido en algo. Es un tema a nivel
+      subconsciente. Nos pasa a todos.
+    </p>
+
+    <p>
+      Entonces.
+    </p>
+
+    <p>
+      <strong>
+        A Max esa obsesión le llevó a ser impulsivo y agresivo. Eso le hacía cometer errores en la carretera.
+      </strong>
+    </p>
+
+    <p>
+      Ahí es donde entró en juego Helmut Marko (el asesor de pilotos en Red Bull) Max siempre ha afirmado que Marko ha
+      sido clave en su desarrollo como piloto. <span style="background-color: #FF4FDD; color:white;">Le dio
+        perspectiva.</span>
+    </p>
+
+    <p>
+      <span style="background-color: black; color:white;">
+        Hay un punto donde más esfuerzo no da más resultados. Lo que cambia todo es una mirada externa, sin sesgos
+      </span>
+    </p>
+
+    <h1 class="biggerMobile">
+      TODAS LAS LEYENDAS TIENEN MÁS DE UN ENTRENADOR
+    </h1>
+
+    <p>
+      Carlos Alcaraz, el propio Verstappen, Ilia Topuria, Magnus Carlsen… Todos los jugadores de fútbol y baloncesto (o
+      cualquier otro deporte en equipo) tienen un entrenador visible pero hay <u>un equipo técnico entero</u> detrás.
+    </p>
+
+    <p style="margin-bottom: 2rem;">
+      <span class="subr">
+        Y ojo porque Max no era el único “borracho”.
+      </span>
+      Para ganar el campeonato en 2021 Red Bull:
+    </p>
+
+    <ul>
+      <li>
+        Cambió su fabricante de motores
+      </li>
+
+      <li>
+        6 ingenieros de Mercedes llegaron a Red Bull
+      </li>
+    </ul>
+
+    <p>
+      Todo esto dio <u>nuevas perspectivas</u> al saber-hacer del equipo. Logrando hacer historia hasta el día de hoy…
+    </p>
+
+    <p style="font-size: clamp(1.5rem, 2vw, 2.5rem); font-weight: bold; color:#FF4FDD;">
+      🤔 ¿Y por qué te cuento todo esto?
+    </p>
+
+    <p>
+      Max tuvo que dejarse guiar. Red Bull tuvo que abrirse a nuevas ideas ➜ esa combinación de talento interno con
+      perspectiva externa fue la clave para hacer historia.
+    </p>
+
+    <p style="margin-bottom: 4rem;">
+      <strong>
+        ¿Está tu eCom haciendo historia o estás dejándote dinero sobre la mesa? Si no tienes clara la respuesta lee
+        esto:
+      </strong>
+    </p>
+
+    <ul class="check-list">
+      <li>
+        ¿Mandas correos pero cada vez menos gente los abre? Uno de los peores errores que cometen casi todos los
+        eCommerce: hacerlos bonitos como un panfleto publicitario. Pero lo bonito por sí solo no vende más, si además es
+        persuasivo sí
+      </li>
+
+      <li>
+        <strong>
+          ¿Tus mails son persuasivos? Lo compruebo con una fórmula probada durante decenas de años en todo tipo de
+          nichos. Se han facturado incontables millones usando esta fórmula de Gary Bencivenga
+        </strong>
+      </li>
+
+      <li>
+        Esta fórmula no se aplica solo a mails. Debería cumplirse en todo tu embudo ➜ anuncios, textos de la web, fichas
+        de productos, vídeos en redes si tienes…
+      </li>
+
+      <li>
+        <strong>
+          Disfruta del mismo principio que ayudó a Red Bull a ganar el mundial: perspectiva externa. Pero aplicado a tu
+          negocio
+        </strong>
+      </li>
+
+      <li>
+        ¿Tienes emails automáticos configurados o estás dejándote dinero sobre la mesa? Y no hablo de mails burocráticos
+        avisando del pedido confirmado o de la entrada de re-stock. Hablo de:
+
+        <ul>
+          <li style="margin-top: 1rem; margin-bottom: 0; line-height: 1.5;">
+            <strong>
+              Una secuencia de bienvenida que fuerza la compra con elegancia
+            </strong>
+          </li>
+
+          <li style="margin-top: 1rem; margin-bottom: 0; line-height: 1.5;">
+            <em>Cross-sell</em> hacia otros productos
+          </li>
+
+          <li style="margin-top: 1rem; margin-bottom: 0; line-height: 1.5;">
+            <strong>
+              Un flujo <em>winback</em> para recuperar clientes inactivos
+            </strong>
+          </li>
+
+          <li style="margin-top: 1rem; margin-bottom: 0; line-height: 1.5;">
+            Y podría seguir pero no te quiero abrumar
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>
+      <strong>
+        Si alguna vez has pensado que tu eCommerce está vendiendo menos de lo que debería y sientes que falta algo (pero
+        no sabes el qué) esto es para ti:
+      </strong>
+    </p>
+
+    <img src="asedio-relampago.webp" style="width: 100vw; margin-bottom: 7rem;">
+
+    <p>
+      Una hora. 320 € (precio final). Durante la llamada hago una radiografía completa de todas las claves mencionadas
+      arriba. Podemos asediar alguna en concreto o hacer un chequeo general para detectar posibles fugas de ventas.
+    </p>
+
+    <p style="font-size: clamp(2rem, 3vw, 2.5rem); font-weight: 500; margin-bottom: 1rem;">
+      <span class="subr">
+       ¿Te interesa? ⚡️
+      </span>
+    </p>
+
+    <p>
+      Si quieres un análisis quirúrgico de tu situación mándame un correo contándome brevemente tu caso, para ver si el
+      servicio es para ti o no. Si te puedo ayudar agendamos una llamada.
+    </p>
+
+    <p class="firma" style="margin-top: 5rem; margin-bottom: 3rem;">deka</p>
+
+    <p>
+      PD: Si el asunto del mail es "Asedio Relámpago" recibirás respuesta en menos de 24h ➜ <a
+        href="mailto:deka@elforjadordefrases.com">deka@elforjadordefrases.com</a>
+    </p>
+
+  </div>
+
+</body>
+
+</html>
