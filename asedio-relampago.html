@@ -66,7 +66,7 @@
     h1 {
       font-family: 'Staatliches', sans-serif;
       font-size: clamp(3em, 4.5vw, 10em);
-      line-height: 1;
+      line-height: 0.8;
       font-weight: bold;
       color: #252422;
     }
@@ -76,7 +76,7 @@
       font-size: clamp(2rem, 2vw, 4rem);
       color: #FF4FDD;
 
-      line-height: 1;
+      line-height: 1.5;
       padding-left: 10%;
       padding-right: 10%;
 
@@ -119,8 +119,7 @@
     }
 
     li {
-      margin-bottom: 0.5em;
-      padding-bottom: clamp(1rem, 1vw, 2rem);
+      margin-bottom: clamp(5rem, 8vw, 8rem);
       font-size: clamp(1.2rem, 1.4vw, 1.6rem);
       line-height: 1.5;
     }
@@ -138,6 +137,7 @@
 
     ul.check-list li {
       line-height: 2;
+      margin-bottom: clamp(3rem, 6vw, 8rem);
     }
 
     ul.check-list li::before {
@@ -153,7 +153,7 @@
       text-underline-offset: 7px;
       text-decoration-thickness: 3px;
     }
-    
+
     a {
       color: #00e5ff;
     }
@@ -194,11 +194,24 @@
       }
 
       .biggerMobile {
-        font-size: 6rem;
+        font-size: clamp(3.5rem, 15vw, 10rem);
       }
 
       img {
         max-width: 95vw;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        padding: 0;
+        padding-left: 1em;
+      }
+
+      ul.check-list {
+        padding: 0;
       }
 
     }
@@ -209,10 +222,12 @@
 <body>
   <div class="banner">
     <h1 class="leftMobile" style="font-family: 'IBM Plex Sans', sans-serif; letter-spacing: -3px; line-height: 1.2;">
-      ¿SABÍAS QUE PUEDES ESTAR <em>BORRACHO</em> DE TRABAJO <span style="color: #3e3d3a">(INCLUSO SI LO TIENES TODO BAJO CONTROL)</span> SABOTEANDO EN SILENCIO EL CRECIMIENTO DE TU ECOMMERCE?
+      ¿SABÍAS QUE PUEDES ESTAR <em>BORRACHO</em> DE TRABAJO <span style="color: #3e3d3a">(INCLUSO SI LO TIENES TODO BAJO
+        CONTROL)</span> FRENANDO EN SILENCIO EL PROGRESO DE TU ECOMM?
     </h1>
 
-    <h2 class="leftMobile">Esto es lo que le pasó a Max&nbsp;Verstappen con Red&nbsp;Bull antes de convertirse en una leyenda:
+    <h2 class="leftMobile">A Max Verstappen le pasó con Red&nbsp;Bull antes de convertirse en una leyenda. Y puedes
+      aplicar en tu eCommerce el mismo principio que le ayudó a ganar el mundial.
     </h2>
 
     <img src="max.webp" alt="Foto de Max Verstappen">
@@ -370,65 +385,57 @@
     </p>
 
     <p>
-      Max tuvo que dejarse guiar. Red Bull tuvo que abrirse a nuevas ideas ➜ esa combinación de talento interno con
-      perspectiva externa fue la clave para hacer historia.
+      Max tuvo que dejarse guiar. Red Bull tuvo que abrirse a nuevas ideas ➜ esa combinación de talento interno con  perspectiva externa fue la clave para hacer historia.
     </p>
 
     <p style="margin-bottom: 4rem;">
       <strong>
-        ¿Está tu eCom haciendo historia o estás dejándote dinero sobre la mesa? Si no tienes clara la respuesta lee
-        esto:
+        ¿Está tu eCom haciendo historia o estás dejándote dinero sobre la mesa? Si no tienes clara la respuesta lee  esto:
       </strong>
     </p>
 
     <ul class="check-list">
       <li>
-        ¿Mandas correos pero cada vez menos gente los abre? Uno de los peores errores que cometen casi todos los
-        eCommerce: hacerlos bonitos como un panfleto publicitario. Pero lo bonito por sí solo no vende más, si además es
-        persuasivo sí
+        ¿Mandas correos pero cada vez menos gente los abre? Uno de los peores errores que cometen casi todos los eCommerce: hacerlos bonitos como un panfleto publicitario. Pero lo bonito por sí solo no vende más, si además es persuasivo sí
       </li>
 
       <li>
         <strong>
-          ¿Tus mails son persuasivos? Lo compruebo con una fórmula probada durante decenas de años en todo tipo de
-          nichos. Se han facturado incontables millones usando esta fórmula de Gary Bencivenga
+          ¿Tus mails son persuasivos? Lo compruebo con una fórmula probada durante decenas de años en todo tipo de nichos. Se han facturado incontables millones usando esta fórmula de Gary Bencivenga
         </strong>
       </li>
 
       <li>
-        Esta fórmula no se aplica solo a mails. Debería cumplirse en todo tu embudo ➜ anuncios, textos de la web, fichas
-        de productos, vídeos en redes si tienes…
+        Esta fórmula no se aplica solo a mails. Debería cumplirse en todo tu embudo ➜ anuncios, textos de la web, fichas de productos, vídeos en redes si tienes…
       </li>
 
       <li>
         <strong>
-          Disfruta del mismo principio que ayudó a Red Bull a ganar el mundial: perspectiva externa. Pero aplicado a tu
-          negocio
+          Disfruta del mismo principio que ayudó a Red Bull a ganar el mundial: perspectiva externa. Pero aplicado a tu negocio
         </strong>
       </li>
 
       <li>
-        ¿Tienes emails automáticos configurados o estás dejándote dinero sobre la mesa? Y no hablo de mails burocráticos
-        avisando del pedido confirmado o de la entrada de re-stock. Hablo de:
+        ¿Tienes emails automáticos configurados o estás dejándote dinero sobre la mesa? Y no hablo de mails burocráticos avisando del pedido confirmado o de la entrada de re-stock. Hablo de:
 
-        <ul>
-          <li style="margin-top: 1rem; margin-bottom: 0; line-height: 1.5;">
+        <ul style="margin-top: 2rem;">
+          <li style="margin-bottom: clamp(1rem, 2vw, 3rem);">
             <strong>
               Una secuencia de bienvenida que fuerza la compra con elegancia
             </strong>
           </li>
 
-          <li style="margin-top: 1rem; margin-bottom: 0; line-height: 1.5;">
+          <li style="margin-bottom: clamp(1rem, 2vw, 3rem);">
             <em>Cross-sell</em> hacia otros productos
           </li>
 
-          <li style="margin-top: 1rem; margin-bottom: 0; line-height: 1.5;">
+          <li style="margin-bottom: clamp(1rem, 2vw, 3rem);">
             <strong>
               Un flujo <em>winback</em> para recuperar clientes inactivos
             </strong>
           </li>
 
-          <li style="margin-top: 1rem; margin-bottom: 0; line-height: 1.5;">
+          <li style="margin-bottom: clamp(1rem, 2vw, 3rem);">
             Y podría seguir pero no te quiero abrumar
           </li>
         </ul>
@@ -437,21 +444,19 @@
 
     <p>
       <strong>
-        Si alguna vez has pensado que tu eCommerce está vendiendo menos de lo que debería y sientes que falta algo (pero
-        no sabes el qué) esto es para ti:
+        Si alguna vez has pensado que tu eCommerce está vendiendo menos de lo que debería y sientes que falta algo (pero no sabes el qué) esto es para ti:
       </strong>
     </p>
 
     <img src="asedio-relampago.webp" style="width: 100vw; margin-bottom: 7rem;">
 
     <p>
-      Una hora. 320 € (precio final). Durante la llamada hago una radiografía completa de todas las claves mencionadas
-      arriba. Podemos asediar alguna en concreto o hacer un chequeo general para detectar posibles fugas de ventas.
+      Una hora. 320 € (precio final). Durante la llamada hago una radiografía completa de todas las claves mencionadas arriba. Podemos asediar alguna en concreto o hacer un chequeo general para detectar posibles fugas de ventas.
     </p>
 
     <p style="font-size: clamp(2rem, 3vw, 2.5rem); font-weight: 500; margin-bottom: 1rem;">
       <span class="subr">
-       ¿Te interesa? ⚡️
+        ¿Te interesa? ⚡️
       </span>
     </p>
 
@@ -463,7 +468,7 @@
     <p class="firma" style="margin-top: 5rem; margin-bottom: 3rem;">deka</p>
 
     <p>
-      PD: Si el asunto del mail es "Asedio Relámpago" recibirás respuesta en menos de 24h ➜ <a
+      PD: Si el asunto del mail es "Asedio Relámpago" recibirás respuesta en menos de 24h&nbsp;➜&nbsp;<a
         href="mailto:deka@elforjadordefrases.com">deka@elforjadordefrases.com</a>
     </p>
 
