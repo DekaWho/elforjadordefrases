@@ -121,28 +121,30 @@
       text-align: center;
     }
 
-    h3 {
-      color: #FF4FDD;
-      font-weight: 400;
-      font-size: clamp(2rem, 2.5vw, 4rem);
-      line-height: 1;
-    }
+
 
     h1 {
       font-family: "Staatliches", sans-serif;
-      font-size: clamp(4.5em, 6vw, 12em);
+      font-size: clamp(4em, 18vw, 6em);
       margin-top: 2vw;
       line-height: 1;
       color: #00e5ff;
       font-weight: 500; /* 500 porque si no Safari lo ponía mega gordo */
     }
 
+    h3 { /* el subtítulo del banner*/
+      color: #FF4FDD;
+      font-weight: 400;
+      font-size: clamp(1.5rem, 2.5vw, 4rem);
+      line-height: 1;
+    }
+
     h2 {
       font-weight: 400;
-      font-size: clamp(2rem, 2vw, 3rem);
+      font-size: clamp(1.5rem, 2vw, 3rem);
       color: #FF4FDD;
 
-      line-height: 1.5;
+      line-height: 2;
       padding-left: 5%;
       padding-right: 5%;
     }
@@ -150,7 +152,7 @@
     p {
       margin: 1em 0;
       margin-bottom: clamp(5rem, 7vw, 10rem);
-      font-size: clamp(1.3rem, 1.4vw, 1.8rem);
+      font-size: clamp(1.2rem, 1.5vw, 2rem);
       line-height: 1.7;
     }
 
@@ -385,7 +387,7 @@
 
     <div class="callout-azul">
 
-    <p class="pcallout" style="font-size: 2em; color: #00e5ff; font-weight: 600; text-align: center;">
+    <p class="pcallout" style="font-size: clamp(2em, 2.5vw, 5em); color: #00e5ff; font-weight: 600; text-align: center;">
         SOY DEKA 🤝
     </p>
 
@@ -424,11 +426,11 @@
         Estos errores frenan las ventas y aumentan el gasto en publicidad (en casa del herrero cuchillo de palo) ¿Quieres saberlos?
       </p>
 
-    <h1 id="mail" style="color: #252422; line-height: 0.8; font-size: clamp(5em, 6vw, 12em); margin-bottom: 2rem; margin-top: 1.5em;">
+    <h1 id="mail" style="color: #252422; line-height: 0.8; margin-bottom: 2rem; margin-top: 1.5em;">
       El informe <del style="text-decoration-thickness: 0.15em; text-decoration-color: #FF4FDD;">prohibido</del>
     </h1>
 
-    <h3 style="color: black; font-size: clamp(1rem, 1.5vw, 1.8rem); margin-top: 0;">
+    <h3 style="color: black; font-size: clamp(1rem, 1.5vw, 1.8rem); margin-top: 0; margin-bottom: 5rem;">
       (gratis y en tu bandeja al instante)
     </h3>
 
@@ -1372,7 +1374,7 @@
 
                     <!-- input -->
                     <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask=""
-                      name="fields[email]" placeholder="Escribe aquí tu email, básicamente" autocomplete="email">
+                      name="fields[email]" placeholder="tu@email.com" autocomplete="email">
                     <!-- /input -->
 
                     <!-- textarea -->
@@ -1413,8 +1415,8 @@
 
 
 
-                  <p>Puedes leer más sobre las burocráticas y aburridas políticas de privacidad <a
-                      href="/privacidad.html">aquí</a></p>
+                  <p style="margin-bottom: 3rem; text-align: center; color: #a6a6a6;">Las burocráticas y aburridas políticas de privacidad están <a
+                      href="/privacidad.html" style="color: #a6a6a6;">aquí</a></p>
 
 
 
@@ -1485,7 +1487,7 @@
 
 
     <!-- PD -->
-    <p class="pcallout" style="margin-top: 6em; text-align: center;">
+    <p class="pcallout" style="margin-top: 6em;">
       Sobre lo del <span class="subr" style="background-color: #FF4FDD; color: white">anti-marketing:</span>
     </p>
 
@@ -1497,12 +1499,12 @@
         
       </p>
 
-      <p style="text-align: center; font-size: 1.8em; color: #FF4FDD; font-weight: 600;">
+      <p style="text-align: center; font-size: 1.5em; color: #FF4FDD; font-weight: 600;">
         Si eres de una agencia puedes llamar a la <em>policía del marketing&nbsp;🚔</em>
       </p>
 
-      <p style="text-align: center; font-size: 1.6em;">
-          Porque esto además es una <span class="subr" style="background-color: #FF4FDD; color: white; font-weight: 400;">anti-newsletter</span>
+      <p style="text-align: center; font-size: 1.3em;">
+          Porque esto además es una <u style="color: #FF4FDD; text-decoration-color: #252422;">anti&nbsp;newsletter</u>
       </p>
 
 
