@@ -151,8 +151,8 @@
 
     p {
       margin: 1em 0;
-      margin-bottom: clamp(5rem, 7vw, 10rem);
       font-size: clamp(1.2rem, 1.5vw, 2rem);
+      margin-bottom: clamp(5rem, 7vw, 10rem);
       line-height: 1.7;
     }
 
@@ -188,9 +188,9 @@
     }
 
     li {
+      font-size: clamp(1.3rem, 1.3vw, 1.5rem);
       margin-bottom: 0.5em;
       padding-bottom: clamp(2rem, 1.5vw, 4rem);
-      font-size: clamp(1.2rem, 1.4vw, 1.6rem);
       line-height: 1.7;
     }
 
@@ -211,6 +211,7 @@
 
 
     .callout-azul,
+    .callout-rojo,
     .callout-rosa {
       /* hacerlo más ancho que el padre */
       position: relative;
@@ -234,6 +235,11 @@
     .callout-rosa {
       border: 2px solid #FF4FDD;
       box-shadow: 0 0 20px #FF4FDD;
+    }
+
+    .callout-rojo {
+      padding-top: 1rem;
+      border: 2px dashed #F40600;
     }
 
     .subr {
@@ -286,6 +292,7 @@
       }
 
       .callout-azul,
+      .callout-rojo,
       .callout-rosa {
         /* hacerlo más ancho que el padre */
         position: relative;
@@ -305,12 +312,12 @@
 
       .callout-azul {
         border: 1px solid #00e5ff;
-        box-shadow: 0 0 5px #00e5ff;
+        box-shadow: 0 0 10px #00e5ff;
       }
 
       .callout-rosa {
         border: 1px solid #FF4FDD;
-        box-shadow: 0 0 5px #FF4FDD;
+        box-shadow: 0 0 10px #FF4FDD;
       }
 
     }
@@ -355,11 +362,12 @@
   </div>
 
   <div class="cuerpo">
-      <p style="margin-bottom: 4em;">
-        Da igual si tu eCommerce vende 100, 1000 o las unidades que sea. Si no retienes a tus clientes puedes acabar en <u style="text-decoration-style: wavy; text-decoration-thickness: 0.1rem; text-decoration-color:#00e5ff;">una montaña rusa:</u>
+      <p class="pcallout" style="margin-bottom: 4em;">
+        Da igual si tu eCommerce vende 100, 1000 o las unidades que sea. Si no retienes a tus clientes puedes acabar en <u style="text-decoration-style: wavy; text-decoration-thickness: 0.1rem; text-decoration-color:#F40600;">una montaña rusa:</u>
       </p>
 
-      <ul>
+      <div class="callout-rojo">
+      <ul style="margin-bottom: 0;">
         <li>
           <strong>
             Sube el gasto en publicidad pero llegan menos clientes
@@ -376,32 +384,33 @@
           </strong>
         </li>
       </ul>
+      </div>
 
       <p class="pcallout">
         <span style="font-size: 1.4em;">🫨</span> ¿También estás en ese punto?
       </p>
 
-      <p>
+      <p class="pcallout">
         Escapa del bucle fidelizando a los clientes que ya te han comprado una vez.
       </p>
 
-    <div class="callout-azul">
-
-    <p class="pcallout" style="font-size: clamp(2em, 2.5vw, 5em); color: #00e5ff; font-weight: 600; text-align: center;">
+    <p style="font-size: clamp(2em, 2.5vw, 5em); color: #00e5ff; font-weight: 600; text-align: center; margin-bottom: 1rem;">
         SOY DEKA 🤝
     </p>
 
-    <p>
+    <div class="callout-azul">
+
+    <p class="pcallout">
        <em>Wordsmith</em><sup>*</sup> y estratega de marketing directo.
     </p>
  
-    <p>
+    <p class="pcallout">
       <strong>
-        <sup>*</sup>¿Qué significa <em>wordsmith</em>?</strong><br>Soy el forjador de frases, un herrero de la palabra ➜&nbsp;no funciono con 2 plantillas y un chatgpt. Creo con sudor y fuego estrategias sólidas para darte <u style="text-decoration-color: #00e5ff;">un respiro</u>
+        <sup>*</sup>¿Qué significa <em>wordsmith</em>?</strong><br>Soy el forjador de frases, un herrero de la palabra ➜&nbsp;no funciono con 2 plantillas y un chatgpt. Creo con sudor y fuego <u style="text-decoration-color: #00e5ff;">estrategias</u> sólidas:
 
     </p>
 
-    <p style="margin-bottom: 1em;">
+    <p class="pcallout" style="margin-bottom: 1em;">
       <strong>Desde 2019 he trabajado con influencers</strong><br>Creando estatrategias de contenido <u style="text-decoration-color: #00e5ff;">para crecer</u> audiencia. Incluso un canal (de YouTube) partía de 0 seguidores y lo llevamos a 109500.
     </p>
     </div>
@@ -417,14 +426,14 @@
     </p>
 
     <div class="callout-rosa">
-      <p>
+      <p class="pcallout">
         <strong>
           Tengo en mis manos un informe <del style="text-decoration-thickness: 0.1em; text-decoration-color: #FF4FDD">prohibido</del> que analiza <span style="color: #FF4FDD; font-weight: bold;">LOS 3 PEORES ERRORES</span> que está cometiendo <span style="font-size: 1.1em; font-weight: 500; font-style: italic; background-color: #252422; color: white; padding: 0 0.2em 0 0.2em;">[CENSORED]</span> (un eCommerce de un influencer con millones de seguidores en sus redes)
           </strong>    
       </p>
 
-      <p>
-        Estos errores frenan las ventas y aumentan el gasto en publicidad (en casa del herrero cuchillo de palo) ¿Quieres saberlos?
+      <p class="pcallout">
+        Estos errores frenan sus ventas y aumenta el gasto en publicidad ¿Quieres saberlos?
       </p>
 
     <h1 style="color: #252422; line-height: 0.8; margin-bottom: 2rem; margin-top: 1.5em;">
@@ -1098,7 +1107,7 @@
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
         color: #252422;
-        background-color: #A2FAA3 !important;
+        background-color: #00e5ff!important;
         /* background: linear-gradient(to left, #FF4FDD, #14E1FE); */
         border: none !important;
         border-radius: 25px !important;
@@ -1120,7 +1129,7 @@
       }
 
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
-        background-color: #00e5ff !important;
+        background-color: #A2FAA3 !important;
         color: white;
       }
 
@@ -1217,7 +1226,7 @@
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent h4 {
         color: #000000;
         font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-size: 12px;
+        font-size: 6px;
         font-weight: 700;
         line-height: 18px;
         margin: 0 0 10px 0;
@@ -1227,7 +1236,7 @@
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent p {
         color: #000000;
         font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-size: 12px;
+        font-size: 1rem;
         line-height: 18px;
         margin: 0 0 10px 0;
       }
@@ -1235,8 +1244,8 @@
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent.privacy-policy p {
         color: #252422;
         font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        line-height: 22px;
+        font-size: 0.65rem;
+        line-height: 2px;
         margin: 0 0 10px 0;
       }
 
@@ -1321,8 +1330,7 @@
       #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedMailerLite-GDPR p {
         color: #000000;
         font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 0.5rem;
         margin: 0;
         padding: 0;
       }
@@ -1335,13 +1343,11 @@
 
       @media (max-width: 768px) {
         #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent p {
-          font-size: 12px !important;
-          line-height: 18px !important;
+          font-size: 0.5rem !important;
         }
 
         #mlb2-27786331.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedMailerLite-GDPR p {
-          font-size: 10px !important;
-          line-height: 14px !important;
+          font-size: 0.5rem !important;
         }
       }
     </style>
@@ -1416,7 +1422,7 @@
 
 
 
-                  <p style="margin-bottom: 3rem; text-align: center; color: #a6a6a6;">Las burocráticas y aburridas políticas de privacidad están <a
+                  <p style="margin-top: 0; margin-bottom: 3rem; text-align: center; color: #a6a6a6;">Las burocráticas y aburridas políticas de privacidad están <a
                       href="/privacidad.html" style="color: #a6a6a6;">aquí</a></p>
 
 
