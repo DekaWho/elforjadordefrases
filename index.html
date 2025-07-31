@@ -125,7 +125,7 @@
 
     h1 {
       font-family: "Staatliches", sans-serif;
-      font-size: clamp(4em, 18vw, 6em);
+      font-size: clamp(3em, 18vw, 5em);
       margin-top: 2vw;
       line-height: 1;
       color: #00e5ff;
@@ -135,13 +135,13 @@
     h3 { /* el subtítulo del banner*/
       color: #FF4FDD;
       font-weight: 400;
-      font-size: clamp(1.5rem, 2.5vw, 4rem);
+      font-size: clamp(1.6rem, 3vw, 2.5rem);
       line-height: 1;
     }
 
     h2 {
       font-weight: 400;
-      font-size: clamp(1.5rem, 2vw, 3rem);
+      font-size: clamp(2rem, 5vw, 3rem);
       color: #FF4FDD;
 
       line-height: 2;
@@ -196,8 +196,9 @@
 
     u {
       text-decoration: underline;
-      text-underline-offset: 7px;
-      text-decoration-thickness: 3px;
+      text-underline-offset: 0.1em;
+      text-decoration-thickness: clamp(0.1rem, 0.75vw, 0.3rem);
+      text-decoration-skip-ink: none;
     }
 
     a {
@@ -334,7 +335,7 @@
 
       <div class="hero-text">
         <h1>
-          Cómo aumentar ingresos sin gastar más en publi
+          Cómo aumentar ingresos sin gastar más en publi <span style="font-family: 'IBM Plex Sans', sans-serif;">(</span>y sin descuentos<span style="font-family: 'IBM Plex Sans', sans-serif;">)</span>
         </h1>
 
         <h3>
@@ -347,8 +348,9 @@
     <section class="heroM">
       <div class="heroM-text">
         <h1>
-          Cómo aumentar ingresos sin gastar más en publi
+          Cómo aumentar ingresos sin gastar más en publi <span style="font-family: 'IBM Plex Sans', sans-serif;">(</span>y sin descuentos<span style="font-family: 'IBM Plex Sans', sans-serif;">)</span>
         </h1>
+
 
         <h3>
           en <u>tiendas online</u> que ya venden
@@ -363,7 +365,7 @@
 
   <div class="cuerpo">
       <p class="pcallout" style="margin-bottom: 4em;">
-        Da igual si tu eCommerce vende 100, 1000 o las unidades que sea. Si no retienes a tus clientes puedes acabar en <u style="text-decoration-style: wavy; text-decoration-thickness: 0.1rem; text-decoration-color:#F40600;">una montaña rusa:</u>
+        Da igual si tu eCommerce vende 100, 1000 o las unidades que sea. Si no retienes a tus clientes puedes acabar en <u style="text-decoration-style: wavy; text-decoration-thickness: 0.1em;text-decoration-color:#F40600;">una montaña rusa:</u>
       </p>
 
       <div class="callout-rojo">
@@ -387,7 +389,7 @@
       </div>
 
       <p class="pcallout">
-        <span style="font-size: 1.4em;">🫨</span> ¿También estás en ese punto?
+        <span style="font-size: 1.4em;">🫨</span> ¿También estás en ese punto? Es frustrante sentir que uno no tiene el control.
       </p>
 
       <p class="pcallout">
@@ -417,8 +419,12 @@
 
     <p>
       <strong>
-        Pero <span style="color: white; font-weight: 500; background-color: rgb(23, 23, 23);">algo me chirriaba en el marketing tradicional:</span> fórmulas vacías, inventarse <em>buyers persona</em> o el nuevo truquitos barato de moda. Hasta que descubrí la última pieza del puzzle...
+        Pero <span style="color: white; font-weight: 500; background-color: rgb(23, 23, 23);">algo me chirriaba en el marketing tradicional:</span> fórmulas vacías, inventarse <em>buyers persona</em> o buscar siempre el nuevo truquito barato de moda... 
       </strong>
+    </p>
+
+    <p>
+      Hasta que descubrí los <span style="font-size: 1.5em; font-weight: 500;">4 pilares</span> que sustentan cualquier venta. De mano de Bencivenga, el <em>copywriter</em> mejor pagado (y más respetado) del mundo
     </p>
 
     <p>
@@ -1228,7 +1234,7 @@
         font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         font-size: 6px;
         font-weight: 700;
-        line-height: 18px;
+        line-height: 1;
         margin: 0 0 10px 0;
         word-break: break-word;
       }
@@ -1237,7 +1243,7 @@
         color: #000000;
         font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         font-size: 1rem;
-        line-height: 18px;
+        line-height: 1;
         margin: 0 0 10px 0;
       }
 
@@ -1245,7 +1251,7 @@
         color: #252422;
         font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
         font-size: 0.65rem;
-        line-height: 2px;
+        line-height: 1;
         margin: 0 0 10px 0;
       }
 
