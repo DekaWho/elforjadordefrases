@@ -44,6 +44,15 @@
       padding: 0;
     }
 
+    .banner {
+      width: 100%;
+      background-color: #151515;
+      margin-top: 0;
+
+      padding-top: 3vw;
+      padding-bottom: 1vw;
+    }
+
     .hero {
       display: flex;
       align-items: center;
@@ -55,6 +64,9 @@
       margin: 1rem auto;
       padding: 0 1rem;
       margin-top: 0;
+
+      flex-wrap: wrap;
+      overflow-x: hidden;
     }
 
     .heroM {
@@ -71,22 +83,24 @@
     }
 
     .hero-image {
-      flex: 1;
+      flex: 2;
       /* parte más pequeña */
     }
 
     .hero-text {
-      flex: 2;
+      flex: 3;
       /* parte más grande */
 
       /* Evitar que se desborde */
       box-sizing: border-box;
       overflow-x: hidden;
+      min-width: 0;
     }
 
     .hero-image img {
-      max-width: clamp(25rem, 28vw, 35rem);
+      width: 100%;
       height: auto;
+      max-width: clamp(25rem, 28vw, 35rem);      
       display: block;
     }
 
@@ -94,15 +108,6 @@
       max-width: 100%;
       margin-top: 2rem;
       margin-bottom: 2rem;
-    }
-
-    .banner {
-      width: 100vw;
-      background-color: #151515;
-      margin-top: 0;
-
-      padding-top: 2vw;
-      padding-bottom: 1vw;
     }
 
     .cuerpo {
@@ -114,39 +119,29 @@
       margin-top: 3vw;
     }
 
-
     h1,
     h2,
     h3 {
       text-align: center;
     }
 
-
+    h3 { /* el pre-título del banner*/
+      color: #FF4FDD;
+      font-weight: 400;
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
 
     h1 {
       font-family: "Staatliches", sans-serif;
-      font-size: clamp(3em, 15vw, 5em);
-      margin-top: 2vw;
+      font-size: clamp(3em, 13vw, 4.5em);
+      margin-top: 0;
+      margin-bottom: 0;
       line-height: 1;
       color: #00e5ff;
       font-weight: 500; /* 500 porque si no Safari lo ponía mega gordo */
-    }
-
-    h3 { /* el subtítulo del banner*/
-      color: #FF4FDD;
-      font-weight: 400;
-      font-size: clamp(1.6rem, 3vw, 2.5rem);
-      line-height: 1;
-    }
-
-    h2 {
-      font-weight: 400;
-      font-size: clamp(2rem, 5vw, 3rem);
-      color: #FF4FDD;
-
-      line-height: 2;
-      padding-left: 5%;
-      padding-right: 5%;
+      padding: 1rem;
     }
 
     p {
@@ -277,24 +272,13 @@
         /* visible en móviles */
       }
 
-      h3 {
-        margin-top: 0;
-      }
-
       h1 {
-        margin-bottom: 2rem;
+        padding-top: 0.5rem;
       }
 
-      h2 {
-        padding: 0;
-        margin-bottom: 3rem;
-        margin-top: 0;
-        text-align: left;
-      }
-
-     p {
+      p {
       margin-bottom: clamp(5rem, 7vw, 10rem);
-    }
+      }
 
       .callout-azul,
       .callout-rojo,
@@ -346,8 +330,7 @@
         <h1>
           Cómo aumentar las ventas en tu tienda online, sin gastar más en publicidad <span style="font-family: 'IBM Plex Sans', sans-serif;">(</span>y sin reventar los precios<span style="font-family: 'IBM Plex Sans', sans-serif;">)</span>
         </h1>
-<!--         <u style="text-decoration-thickness: 0.075em; text-decoration-skip-ink: auto;"></u>
- -->  </div>
+      </div>
     </section>
 
     <!-- Este solo se ve en móvil -->
@@ -392,7 +375,7 @@
         </li>
 
         <li>
-          Los clientes compran pero no vuelven
+          Los clientes compran pero pocos repiten
         </li>
 
         <li>
@@ -404,7 +387,7 @@
       </div>
 
       <p>
-        Si te pasa alguna, eso tiene una solución estratégica (y no es gastar más en anuncios). Te cuento cómo ya mismo pero antes me presento:
+        Si te pasa alguna eso tiene una solución estratégica (y no es gastar más en anuncios) Te cuento cómo ya mismo pero antes me presento:
       </p>
 
 
@@ -420,7 +403,7 @@
  
     <p class="pcallout">
       <strong>
-        <sup>*</sup>¿Qué significa <em>wordsmith</em>?</strong><br>Soy el forjador de frases, un herrero de la palabra ➜&nbsp;no funciono con 2 plantillas y un chatgpt. Creo con sudor y fuego estrategias de email marketing pensadas <u style="text-decoration-color: #00e5ff;">para vender</u>
+        <sup>*</sup>¿Qué significa <em>wordsmith</em>?</strong><br>Soy el forjador de frases, un herrero de la palabra ➜&nbsp;no funciono con 2 plantillas y un chatgpt. Cronstruyo con fuego y sudor estrategias de email marketing pensadas <u style="text-decoration-color: #00e5ff;">para vender</u>
 
     </p>
 
@@ -434,7 +417,7 @@
     </p>
 
     <p>
-      <u style="text-decoration-color: #151515; color: #F40600; font-weight: 600;">⚠️ Eso es un peligro</u> si quieres un negocio sólido y predecible. Por eso busqué otras formas de comunicación con los clientes. Y así descubrí el canal más rentable (y muchas veces subestimado) para el 99% de los negocios online: el email marketing.
+      <span style="color: #F40600; font-weight: 600;">⚠️ Eso es un peligro</span> si quieres un negocio sólido y predecible. Por eso busqué otras formas de comunicación con los clientes. Y así descubrí el canal más rentable (y muchas veces subestimado) para el 99% de los negocios online: el email marketing.
     </p>
 
     <p>
@@ -450,8 +433,27 @@
     <div class="callout-rosa" style="padding-top: 2rem;">
     <ul>
       <li>
+          <strong>
+          ¿Tienes una bienvenida que convierte a los curiosos en clientes?
+          </strong>
+          <br>
+          
+           Y no me refiero a un único correo con un 10% de descuento.     
+      </li>
+
+      <li>
         <strong>
-          ¿Mandas correos pero cada vez menos gente los abre?
+          ¿Tienes otros flujos automáticos generando un ingreso pasivo?
+        </strong>
+        <br>
+          
+        No hace falta mandar correos diarios. Puedes tener flujos escritos que se activan cuando un cliente hace una acción concreta.
+      </li>
+
+
+      <li>
+        <strong>
+          ¿Mandas correos pero los abren poco?
         </strong>
         <br>
 
@@ -464,24 +466,33 @@
           </strong>
           <br>
           
-          Si quieres venderles primero tienen que leerte. La curiosidad es una gran aliada.
-        
+          Si quieres venderles primero tienen que leerte. La curiosidad es una gran aliada.        
       </li>
 
       <li>
-        <strong>
-          ¿Tienes flujos de emails automáticos?
-        </strong>
-        <br>
+          <strong>
+          ¿Haces que tus clientes sientan que forman parte de algo?
+          </strong>
+          <br>
           
-        No hace falta mandar correos cada día a todos tus clientes. Puedes configurar emails que se activan cuando un cliente hace una acción concreta.
+          Si solo les hablas cuando hay un descuento (o un restock) estás desaprovechando la oportunidad de ser alguien memorable para ellos (o sea convertirte en su primera opción de compra)
       </li>
 
     </ul>
     </div>
 
     <p>
-       Con estas preguntas puedes detectar algunos puntos fuertes (y flojos) de tu estrategia de emails. Si quieres que tus correos trabajen mejor para ti: construyo con sudor y fuego flujos de emails pensados para vender. Me puedes contactar en <span id="correo"></span>
+       Con estas preguntas puedes detectar algunos puntos fuertes (y flojos) de tu estrategia de emails.
+    </p>    
+
+    <p>
+      <strong>
+        Y si al leerlas has sentido que tus correos podrían trabajar mejor para ti ➜&nbsp;yo construyo con fuego y sudor flujos de emails diseñados para vender.
+      </strong>
+    </p>
+    
+    <p style="text-align: center;">
+       Me puedes contactar en <span id="correo"></span>
     </p>    
      
   <script>
